@@ -1,0 +1,29 @@
+<h1>Listado de salas</h1>
+
+<table class = "table">
+  <thead>
+    <tr>
+      <th>Salafull</th>
+      <th>Salamedia</th>
+      <th>Salabasica</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @salas.each do |sala| %>
+      <tr>
+        <td><%= sala.salaFull %></td>
+        <td><%= sala.salaMedia %></td>
+        <td><%= sala.salaBasica %></td>
+        <td><%= link_to 'Mostrar', sala %></td>
+        <td><%= link_to 'Editar', edit_sala_path(sala) %></td>
+        <td><%= link_to 'Eliminar', sala, method: :delete, data: { confirm: '¿Estas seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Sala', new_sala_path %>
