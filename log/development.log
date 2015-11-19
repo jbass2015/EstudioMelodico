@@ -23308,3 +23308,63 @@ Migrating to CreateReservaSalas (20151103235128)
             FROM sqlite_temp_master
             WHERE name='index_usuarios_on_email' AND type='index'
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-18 20:25:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InicioController#index as HTML
+  Rendered inicio/index.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (4.0ms)
+Completed 200 OK in 391ms (Views: 347.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reserva_salas.css?body=1" for 127.0.0.1 at 2015-11-18 20:25:30 -0300
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2015-11-18 20:25:30 -0300
+
+
+Started GET "/assets/reservas.css?body=1" for 127.0.0.1 at 2015-11-18 20:25:30 -0300
+
+
+Started GET "/assets/salas.css?body=1" for 127.0.0.1 at 2015-11-18 20:25:30 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-18 20:25:30 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-18 20:25:30 -0300
+
+
+Started GET "/assets/sitioenconstruccion.jpg" for 127.0.0.1 at 2015-11-18 20:25:30 -0300
+
+
+Started GET "/reservas" for 127.0.0.1 at 2015-11-18 20:28:39 -0300
+Processing by ReservasController#index as HTML
+  [1m[35mReserva Load (0.0ms)[0m  SELECT "reservas".* FROM "reservas"
+  Rendered reservas/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 116ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/salas" for 127.0.0.1 at 2015-11-18 20:29:07 -0300
+Processing by SalasController#index as HTML
+  [1m[36mSala Load (0.0ms)[0m  [1mSELECT "salas".* FROM "salas"[0m
+  Rendered salas/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 69ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reserva_salas" for 127.0.0.1 at 2015-11-18 20:29:09 -0300
+Processing by ReservaSalasController#index as HTML
+  [1m[35mReservaSala Load (0.0ms)[0m  SELECT "reserva_salas".* FROM "reserva_salas"
+  Rendered reserva_salas/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 69ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-18 20:29:21 -0300
+Processing by InicioController#index as HTML
+  Rendered inicio/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
